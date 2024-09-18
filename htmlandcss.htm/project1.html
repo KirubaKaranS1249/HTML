@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Project</title>
+    <style>
+      /* Reset some default browser styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      /* Navigation */
+      nav {
+        background-color: #007bff;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 10px 15px;
+        transition: background-color 0.3s;
+      }
+
+      nav ul li a:hover {
+        background-color: #0056b3;
+        border-radius: 5px;
+      }
+
+      /* Full-page sections */
+      section {
+        height: 100vh; /* Full screen height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+      }
+
+      section h2 {
+        font-size: 3rem;
+        color: #007bff;
+        margin-bottom: 1rem;
+      }
+
+      section p {
+        font-size: 1.5rem;
+        line-height: 1.8;
+        color: #555;
+        max-width: 800px;
+      }
+
+      /* Main header section */
+      .header {
+        background: linear-gradient(135deg, #007bff, #00a4cc);
+        color: white;
+        height: 100vh; /* Ensure full height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        letter-spacing: 1.5px;
+      }
+
+      .header p {
+        font-size: 1.5rem;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .btn-primary {
+        background-color: #ffd700;
+        color: #333;
+        padding: 15px 30px;
+        border: none;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #ffc107;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer p {
+        font-size: 1rem;
+      }
+
+      /* Scroll smooth behavior */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* For sections after the first one, give each a unique background */
+      #section2 {
+        background-color: #fff;
+      }
+
+      #section3 {
+        background-color: #f8f9fa;
+      }
+
+      #section4 {
+        background-color: #e9ecef;
+      }
+
+      #section5 {
+        background-color: #dee2e6;
+      }
+
+      #section6 {
+        background-color: #ced4da;
+      }
+
+      #section7 {
+        background-color: #adb5bd;
+      }
+
+      #section8 {
+        background-color: #6c757d;
+        color: white;
+      }
+
+      #section9 {
+        background-color: #343a40;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">About</a></li>
+        <li><a href="#section3">Services</a></li>
+        <li><a href="#section4">Projects</a></li>
+        <li><a href="#section5">Skills</a></li>
+        <li><a href="#section6">Experience</a></li>
+        <li><a href="#section7">Contact</a></li>
+        <li><a href="#section8">Testimonials</a></li>
+        <li><a href="#section9">Gallery</a></li>
+        <li><a href="#section10">Footer</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="section1" class="header">
+      <h1>Welcome to My Project</h1>
+      <p class="tagline">
+        Building scalable, responsive, and modern applications to meet business
+        needs and exceed expectations.
+      </p>
+      <a href="#section2" class="btn-primary">Explore More</a>
+    </header>
+
+    <!-- Main Content Sections -->
+    <section id="section2">
+      <h2>About This Project</h2>
+      <p>
+        This project demonstrates my ability to design and develop a complete
+        web application from scratch. With a focus on both frontend and backend,
+        I have integrated various modern technologies to create a responsive and
+        user-friendly experience.
+      </p>
+    </section>
+
+    <section id="section3">
+      <h2>Services</h2>
+      <p>
+        I offer full-stack development services, which include UI/UX design,
+        server-side logic, database management, and deployment. From ideation to
+        implementation, I ensure seamless integration and scalability of
+        applications.
+      </p>
+    </section>
+
+    <section id="section4">
+      <h2>Projects</h2>
+      <p>
+        Some of my recent projects include a real-time chat application, an
+        e-commerce platform with payment gateway integration, and a task
+        management tool with user authentication and data persistence.
+      </p>
+    </section>
+
+    <section id="section5">
+      <h2>Skills</h2>
+      <p>
+        I specialize in Java, Spring Boot, JavaScript (React, Node.js),
+        HTML/CSS, and databases like MySQL and MongoDB. My expertise also
+        extends to version control with Git, CI/CD pipelines, and cloud
+        platforms like AWS.
+      </p>
+    </section>
+
+    <section id="section6">
+      <h2>Experience</h2>
+      <p>
+        With a background in full-stack development, I have collaborated on
+        multiple projects that span different industries. Whether working on the
+        frontend to create responsive designs or the backend for API
+        development, I strive to deliver robust solutions.
+      </p>
+    </section>
+
+    <section id="section7">
+      <h2>Contact</h2>
+      <p>
+        If you'd like to work together or have any questions, feel free to reach
+        out via email: <a href="mailto:example@mail.com">example@mail.com</a>
+      </p>
+    </section>
+
+    <section id="section8">
+      <h2>Testimonials</h2>
+      <p>
+        “Kirubakaran is an exceptional developer with a deep understanding of
+        both frontend and backend technologies. His attention to detail and
+        commitment to quality sets him apart.”
+      </p>
+      <p>– Client A</p>
+      <p>
+        “Working with Kirubakaran was a pleasure. He quickly understood the
+        requirements and delivered a solution that exceeded expectations.”
+      </p>
+      <p>– Client B</p>
+    </section>
+
+    <section id="section9">
+      <h2>Gallery</h2>
+      <p>
+        A selection of my previous projects that highlight my skills and
+        experience in web development.
+      </p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="section10">
+      <p>&copy; 2024 Kirubakaran S. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
